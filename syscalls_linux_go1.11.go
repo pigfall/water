@@ -8,6 +8,7 @@ import (
 )
 
 func openDev(config Config) (ifce *Interface, err error) {
+	todo
 	var fdInt int
 	if fdInt, err = syscall.Open(
 		"/dev/net/tun", os.O_RDWR|syscall.O_NONBLOCK, 0); err != nil {
