@@ -7,6 +7,7 @@ import (
 )
 
 func openDev(config Config) (ifce *Interface, err error) {
+	todo 
 	var file *os.File
 	if file, err = os.OpenFile(
 		"/dev/net/tun", os.O_RDWR, 0); err != nil {
